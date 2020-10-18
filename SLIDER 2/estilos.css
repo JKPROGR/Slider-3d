@@ -1,0 +1,102 @@
+body{
+    cursor: pointer;
+    background-color: #fff;
+   overflow: hidden;
+    height: 100vh;
+    width: 72%;
+    margin: auto;
+}
+.padre{
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.contenedor{
+    height: 300px;
+    width: 52%;
+    display: flex;
+    perspective: 1000px;
+   /* margin: 100px  100px; */
+    transform: rotate(90deg) rotateY(0deg);
+    transform-style: preserve-3d;
+   
+}
+.box-cubo{
+    height:300px;
+    width: 70px;
+    transform-style: preserve-3d;
+    transition: .5s ease-in-out;
+    margin: 0;
+   
+}
+.lado{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   
+}
+:root{
+    --transladacion2:translateZ(150px);
+    --transladacion3:translateZ(-80px);
+    --transladacion1:translateZ(150px);
+}
+.lado:nth-child(1){
+    transform: rotateY(0deg) var(--transladacion2);
+   
+}
+.lado:nth-child(2){
+    transform: rotateY(90deg) var(--transladacion3);
+    background-color: #333;
+    width: 300px;
+}
+.lado:nth-child(3){
+    transform: rotateY(-90deg) var(--transladacion1);
+    background-color: #333;
+    width: 300px;
+}
+.lado:nth-child(4){
+    transform: rotateY(180deg) rotate(180deg)var(--transladacion2);
+    
+}
+.lado:nth-child(5){
+    transform: rotateX(90deg) var(--transladacion2);
+    
+}
+.lado:nth-child(6){
+    transform: rotateX(-90deg) var(--transladacion2);
+      
+}
+
+.lado img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cubo2{
+    transition-delay: .3s
+}
+.cubo3{
+    transition-delay: .6s 
+}
+.cubo4{
+    transition-delay: .9s
+}
+.buton{
+    height: 40px;
+    width: 40px;
+}
+.buton img{
+    height: 100%;
+    width: 100%;
+}
+.btn1{
+    transform: rotate(180deg)
+}
+
+
+
+

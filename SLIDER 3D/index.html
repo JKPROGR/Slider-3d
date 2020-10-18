@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="padre">
+      <div class="buton btn1" id="btn1">
+      <img src="IMAGENES/flecha2.png" alt="">
+  </div>
+   <div class="contenedor">
+       <div class="box-cubo cubo1">
+          <div class="lado"><img src="IMAGENES/img1/imagen_1.jpg" alt=""></div>
+          <div class="lado">
+              
+          </div>
+          <div class="lado"></div>
+          <div class="lado">
+               <img src="IMAGENES/img3/fila-1-col-1.jpg" alt="">
+          </div>
+          <div class="lado">
+              <img src="IMAGENES/img2/fila-1-col-1.jpg" alt="">
+          </div>
+          <div class="lado">
+              <img src="IMAGENES/img4/fila-1-col-1.jpg" alt="">
+          </div>
+         
+       </div>
+     <div class="box-cubo cubo2">
+           <div class="lado">
+               <img src="IMAGENES/img1/imagen2.jpg" alt="">
+           </div>
+           <div class="lado"></div>
+           <div class="lado"></div>
+           <div class="lado">
+               <img src="IMAGENES/img3/fila-1-col-2.jpg" alt="">
+           </div>
+           <div class="lado">
+               <img src="IMAGENES/img2/fila-1-col-2.jpg" alt="">
+           </div>
+           <div class="lado">
+              <img src="IMAGENES/img4/fila-1-col-2.jpg" alt="">
+           </div>
+       </div>
+       <div class="box-cubo cubo3">
+           <div class="lado">
+               <img src="IMAGENES/img1/imagen3.jpg" alt="">
+           </div>
+           <div class="lado"></div>
+           <div class="lado"></div>
+           <div class="lado">
+               <img src="IMAGENES/img3/fila-1-col-3.jpg" alt="">
+           </div>
+           <div class="lado">
+               <img src="IMAGENES/img2/fila-1-col-3.jpg" alt="">
+           </div>
+           <div class="lado">
+               <img src="IMAGENES/img4/fila-1-col-3.jpg" alt="">
+           </div>
+       </div>
+        <div class="box-cubo cubo4">
+           <div class="lado">
+               <img src="IMAGENES/img1/imagen4.jpg" alt="">
+           </div>
+           <div class="lado"></div>
+           <div class="lado"></div>
+           <div class="lado">
+               <img src="IMAGENES/img3/fila-1-col-4.jpg" alt="">
+           </div>
+           <div class="lado">
+               <img src="IMAGENES/img2/fila-1-col-4.jpg" alt="">
+           </div>
+           <div class="lado">
+               <img src="IMAGENES/img4/fila-1-col-4.jpg" alt="">
+           </div>
+       </div>
+      
+      
+   </div>
+    <div id="btn2" class="buton btn2">
+        <img src="IMAGENES/flecha2.png" class="felcha2" alt="">
+    </div>
+  </div>
+  <!--<div class="conte-sombra">
+      <div class="sombra"></div>
+  </div>-->
+   <script>
+    let box=document.querySelectorAll('.box-cubo')
+    let button1=document.getElementById('btn1')
+     let button2=document.getElementById('btn2')
+    let valor=0;
+       
+    button1.addEventListener('click',()=>{
+       valor-=90
+        for(let index of box)
+            {
+                 
+                index.style.transform=`rotateX(${valor}deg)`
+               
+               // index.style.transform='rotateX(-90deg)'
+              
+            }
+      
+       
+    })
+       
+        button2.addEventListener('click',()=>{
+       valor+=90
+        for(let index of box)
+            {
+                 
+                index.style.transform=`rotateX(${valor}deg)`
+              
+               // index.style.transform='rotateX(-90deg)'
+              
+            }
+      
+       
+    })
+       
+    
+    
+    
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

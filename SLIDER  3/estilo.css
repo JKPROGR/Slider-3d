@@ -1,0 +1,71 @@
+body{
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #0ca1eb
+ ;
+}
+.cont-padre{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.cont-cubo{
+    height: 300px;
+    width: 40%;
+    perspective: 1000px;
+    margin: 0 70px  0;
+}
+.box-cubo{
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: .6s ease-in-out;
+    /*transform: rotateX(50deg)*/
+}
+.lado{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 5px solid #fff;
+}
+:root{
+    --transladacion1:translateZ(155px);
+}
+.lado:nth-child(1){
+    transform: rotateY(0deg) var(--transladacion1)
+}
+.lado:nth-child(2){
+    transform: rotateX(90deg)var(--transladacion1)
+}
+.lado:nth-child(3){
+    transform: rotateX(-90deg) var(--transladacion1)
+}
+.lado:nth-child(4){
+    transform: rotateY(180deg) rotate(180deg)var(--transladacion1)
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.button:nth-child(1){
+    transform: rotate(180deg)
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   
+    <div class="cont-padre">
+       <div class="button" id="btn1">
+           <img src="https://res.cloudinary.com/diz8ym76r/image/upload/v1602992524/imagenes%20slider/flecha2_juqb3y.png" alt="">
+       </div>
+        <div class="cont-cubo">
+            <div class="box-cubo box">
+                <div class="lado"><img src="https://img.freepik.com/foto-gratis/retrato-chica-guapa-vestida-negro-vestido-gritando_171337-3879.jpg?size=626&ext=jpg&ga=GA1.2.1506558316.1602735123" alt=""></div>
+                <div class="lado"><img src="https://img.freepik.com/foto-gratis/chica_23-2148168168.jpg?size=626&ext=jpg&ga=GA1.2.1506558316.1602735123" alt=""></div>
+                <div class="lado"><img src="https://img.freepik.com/foto-gratis/chica-rubia-pensando-espacio-copia_23-2148221772.jpg?size=626&ext=jpg&ga=GA1.2.1506558316.1602735123" alt=""></div>
+                <div class="lado"><img src="https://img.freepik.com/foto-gratis/chica-moda-hermosa-chaqueta-cuero-sombrero-negro-muestra-signo-ok-aislado-pared-color-amarillo-claro_231208-6566.jpg?size=626&ext=jpg&ga=GA1.2.1506558316.1602735123" alt=""></div>
+            </div>
+        </div>
+        <div class="button" id="btn2">
+             <img src="https://res.cloudinary.com/diz8ym76r/image/upload/v1602992524/imagenes%20slider/flecha2_juqb3y.png" alt="">
+        </div>
+    </div>
+    
+    <script>
+    let box=document.querySelector('.box')
+    let btn1=document.getElementById('btn1')
+     let btn2=document.getElementById('btn2')
+     let valor=0;
+     btn1.addEventListener('click',()=>{
+         
+         valor+=90
+        box.style.transform=`rotateX(${valor}deg)`
+        
+        console.log(valor)
+     })
+     
+    btn2.addEventListener('click',()=>{
+         
+         valor-=90
+        box.style.transform=`rotateX(${valor}deg)`
+        
+        console.log(valor)
+     })
+     
+     
+     
+     
+     
+    </script>
+    
+</body>
+</html>
